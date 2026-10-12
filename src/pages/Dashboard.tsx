@@ -15,10 +15,17 @@ export default function Dashboard() {
         <div className="dashboard-content">
           <MetricCards />
           <AnalyticsCharts />
-          <section className="lower-grid"><SalesChart /><Tasks /></section>
+          <section className="lower-grid">
+            <SalesChart />
+            <Tasks />
+          </section>
         </div>
-        <button className="settings" aria-label="Dashboard settings"><Settings /></button>
-        <button className="edit-button" aria-label="Edit dashboard"><Pencil /></button>
+        <button className="settings" aria-label="Dashboard settings">
+          <Settings />
+        </button>
+        <button className="edit-button" aria-label="Edit dashboard">
+          <Pencil />
+        </button>
       </section>
     </main>
   )
