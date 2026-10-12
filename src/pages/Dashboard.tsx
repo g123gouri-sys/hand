@@ -8,7 +8,14 @@ import { Tasks } from '../components/dashboard/Tasks'
 
 export default function Dashboard() {
   return (
-   tion className="lower-grid"><SalesChart /><Tasks /></section>
+    <main className="dashboard-shell">
+      <Sidebar />
+      <section className="main-area dashboard-area">
+        <Navbar />
+        <div className="dashboard-content">
+          <MetricCards />
+          <AnalyticsCharts />
+          <section className="lower-grid"><SalesChart /><Tasks /></section>
         </div>
         <button className="settings" aria-label="Dashboard settings"><Settings /></button>
         <button className="edit-button" aria-label="Edit dashboard"><Pencil /></button>
